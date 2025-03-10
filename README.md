@@ -25,8 +25,8 @@ All data in this project is mocked in three files in the `public` folder. Since 
 
 ### **1. Clone the Repository**
 ```bash
-git clone https://github.com/your-repo.git
-cd your-repo
+git clone https://github.com/sofiaesther/signUp.git
+cd signUp
 ```
 
 ### **2. Install Dependencies**
