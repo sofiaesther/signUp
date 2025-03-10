@@ -1,0 +1,336 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap');
+
+@theme {
+	--color-gray: #E0DFEA;
+	--color-light-purple: #C1B8F5;
+	--color-purple: #716A9B;
+	--color-dark-purple: #433B72;
+	--color-white: #fff;
+	--color-black: #000;
+	--color-success: #07C300;
+	--color-error: #CC1E1E;
+
+	--font-family: "PT Serif Caption";
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6, p, span {
+	@apply font-serif m-0;
+}
+
+h1 {
+	@apply text-4xl font-bold text-purple text-center;
+}
+
+h2 {
+	@apply text-lg font-semibold text-black;
+}
+
+h3 {
+	@apply text-lg text-black;
+}
+
+h4 {
+	@apply font-bold text-black;
+}
+
+p {
+	@apply text-sm font-light text-black;
+}
+
+@layer components {
+	/* GENERAL */
+	.page-wrapper {
+		@apply flex items-center justify-center;
+	}
+
+	.title-group {
+		@apply gap-3 mb-10 lg:gap-5 lg:mb-12;
+	}
+
+	.components {
+		@apply p-10 max-w-[100%] rounded-lg shadow-lg text-center justify-between w-[450px] lg:w-[900px] gap-10 lg:p-20 lg:px-15;
+	}
+
+	.column-group {
+		@apply flex flex-col items-center;
+	}
+
+	.row-group {
+		@apply flex flex-row items-center;
+	}
+
+	.button-wrapper {
+		@apply flex w-[100%] justify-center gap-3 flex-col items-center bg-light-purple p-6 rounded-xl shadow-md;
+	}
+
+	.selection-button {
+		@apply min-w-[100%] bg-white text-black px-4 py-2 rounded-lg shadow-md hover:bg-gray-100;
+	}
+
+	.submit-button {
+		@apply bg-dark-purple text-white py-3 px-6 rounded-md shadow-lg mt-4 hover:bg-purple hover:cursor-pointer;
+	}
+
+	.return-button {
+		@apply bg-gray text-black py-3 px-6 rounded-md shadow-lg mt-4 hover:bg-purple hover:text-white hover:cursor-pointer;
+	}
+
+	.show-mobile {
+		@apply lg:hidden;
+	}
+
+	.show-desktop {
+		@apply hidden lg:block;
+	}
+
+
+	/* HOMEPAGE */
+	.homepage {
+		@apply relative w-full px-5 justify-start items-center mx-10 my-[15vh]
+			lg:px-0 lg:w-[1288px] lg:h-[890px];
+
+		.title-group {
+			h3 {
+				@apply max-w-[300px] text-center;
+			}
+		}
+
+		.components {
+			@apply bg-gray lg:h-[520px];
+		}
+
+		.change-button > .show-mobile > .css-b62m3t-container,
+		.select-mobile-country__control,
+		.select-mobile-language__control,
+		.change-button {
+			@apply !w-[100%] !max-w-[230px];
+		}
+
+		.select-desktop__control {
+			@apply !w-[250px];
+		}
+	}
+
+	.homepage-buttons-wrapper {
+		@apply flex flex-col lg:flex-row items-center justify-center gap-10 w-full;
+
+		.button-wrapper {
+			@apply lg:h-[180px] gap-5;
+
+			h2 {
+				@apply text-black;
+			}
+		}
+
+		.change-button > .show-mobile > h4 {
+			@apply hidden;
+		}
+	}
+
+	/* SIGN UP */
+
+	.signup {
+        @apply w-full gap-5 lg:gap-8 py-20 lg:my-15 px-5 h-[100%] lg:py-0 lg:px-0 lg:w-[1288px] lg:h-[890px] justify-start;
+
+		.components {
+			@apply bg-light-purple lg:py-5;
+
+			form {
+				@apply w-[100%];
+			}
+		}
+    }
+
+	/* FOOTER */
+
+	.footer {
+		@apply fixed top-0 start-0 end-0 flex bg-dark-purple h-15 max-w-screen z-2
+			justify-between px-[10%]
+			lg:gap-20 lg:justify-center lg:top-auto lg:bottom-0;
+
+		.row-group {
+			@apply gap-5;
+
+			h3 {
+				@apply !text-white !text-sm lg:!text-lg font-bold !mt-0;
+			}
+		}
+
+
+		.show-mobile > h4,
+		.select-desktop__single-value {
+			@apply !text-white !text-sm lg:!text-lg !font-light;
+		}
+
+		.change-button > .row-group.show-mobile,
+		> .row-group {
+			@apply !gap-2;
+		}
+
+		.select-desktop__control,
+		.select-mobile-country__control,
+		.select-mobile-language__control {
+			@apply !bg-transparent !border-none;
+		}
+
+
+		.select-desktop__indicator {
+			@apply !p-0;
+		}
+
+		.select-mobile-country__value-container,
+		.select-mobile-country__indicator-separator,
+		.select-mobile-language__value-container,
+		.select-mobile-language__indicator-separator,
+		.select-desktop__indicator-separator {
+			@apply !hidden;
+		}
+
+		.select-desktop__menu,
+		.select-desktop__menu-list,
+		.select-mobile-language__menu,
+		.select-mobile-language__menu-list,
+		.select-mobile-country__menu,
+		.select-mobile-country__menu-list {
+			@apply !w-40;
+		}
+
+		.select-mobile-language__menu {
+			@apply !right-0;
+		}
+	}
+
+	/* STEP 1 */
+	.step1-wrapper {
+		.title-group {
+			@apply gap-1 mb-8;
+		}
+
+		.fields {
+			@apply flex flex-col gap-5 lg:grid lg:grid-cols-2 w-[100%];
+		}
+
+		.submit-button {
+			@apply mt-10;
+		}
+	}
+
+	/* FORM */
+
+	.field {
+		@apply flex flex-col items-start gap-1 relative mb-3;
+
+		.input-field {
+			@apply bg-white rounded-lg w-[100%] h-[30px] px-2;
+		}
+
+		.label-sibling {
+			@apply ms-3 font-bold font-family;
+		}
+
+		.field__error {
+			@apply text-error text-sm ps-3 absolute top-[60px];
+		}
+	}
+
+	.location-field {
+		@apply relative;
+
+		.location-suggestions {
+			@apply absolute z-2 top-[60px] w-[100%] bg-white border-gray border-2 rounded-md shadow-2xl;
+
+			li {
+				@apply border-gray border-y-1 text-start p-2;
+			}
+		}
+	}
+
+	.visa-type-field {
+		@apply relative;
+
+		.visa-type-suggestions {
+			@apply absolute z-2 top-[60px] w-[100%] bg-white border-gray border-2 rounded-md shadow-2xl;
+
+			li {
+				@apply border-gray border-y-1 text-start p-2;
+			}
+		}
+	}
+
+	.field-checkbox {
+		@apply flex flex-row-reverse justify-start items-start gap-1 relative mb-6;
+
+
+		.input-field {
+			@apply bg-white rounded-lg w-[15px] h-[15px] px-2 my-auto;
+		}
+
+		.label-sibling {
+			@apply ms-3 font-bold font-family w-[100%] text-start;
+		}
+
+		.field__error {
+			@apply text-error text-sm ps-3 top-auto -bottom-5 left-5 absolute;
+		}
+	}
+
+	/* STEP 2 */
+	.step2-wrapper {
+		@apply gap-5 flex flex-col;
+
+		.title-group {
+			@apply gap-1 mb-8;
+		}
+
+		.filled-fields {
+			@apply flex flex-col gap-2;
+
+			.row-group {
+				@apply gap-1;
+			}
+		}
+
+		.fields {
+			@apply flex flex-col gap-0 w-[100%] justify-start;
+		}
+
+		> .row-group {
+			@apply justify-center gap-10;
+		}
+	}
+
+	/* SUCCESS | FAIL */
+	.fail-page > .title-group > h1 {
+		@apply !text-error;
+	}
+
+	.success-page > .title-group > h1 {
+		@apply !text-success;
+	}
+
+	.success-page,
+	.fail-page {
+		@apply flex-col bg-light-purple h-screen;
+
+		.title-group {
+			@apply bg-white w-[80%] py-15 flex justify-center items-center lg:max-w-[1080] rounded-2xl shadow-2xl;
+
+			h1 {
+				@apply flex;
+			}
+		}
+
+		.column-group {
+			@apply w-[80%];
+
+			h3 {
+				@apply flex text-center;
+			}
+		}
+
+	}
+
+}

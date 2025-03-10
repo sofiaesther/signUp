@@ -1,0 +1,90 @@
+{
+	"homePage": {
+		"title": "Inscrivez-vous sur la liste d'attente !",
+		"subtitle": "Voulez-vous nous rejoindre ? Remplissez le formulaire et nous vous contacterons !",
+		"country": "Sélectionnez votre pays",
+		"language": "Sélectionnez votre langue",
+		"bottomText": "Tout est correct ?",
+		"signUpButton": "Inscrivez-vous maintenant !"
+	},
+	"countries": {
+		"label": {
+			"ca": "Canada",
+			"us": "États-Unis",
+			"br": "Brésil",
+			"in": "Inde",
+			"ae": "Émirats Arabes Unis",
+			"fr": "France"
+		}
+	},
+	"languages": {
+		"label": {
+			"fr": "Français",
+			"pt": "Portugais",
+			"en": "Anglais"
+		}
+	},
+	"signUp": {
+		"title": "Formulaire d'inscription",
+		"description": "Veuillez fournir les informations requises pour continuer.",
+		"personalIdentification": "Numéro d'Identification",
+		"location": "État",
+		"postCode": "Code Postal",
+		"confirmButton": "Confirmez vos informations",
+		"form": {
+			"label": {
+				"email": "Adresse Email",
+				"name": "Nom",
+				"country": "Pays",
+				"state": "État / Région",
+				"city": "Ville",
+				"location": "État",
+				"postalCode": "Code Postal",
+				"continueButton": "Continuer",
+				"visaType": "Visa Type",
+				"idDocument": "Numéro d'Identification",
+				"confirmData": "Je confirme que mes données sont correctes",
+				"privacyPolicy": "J'accepte de partager mes données personnelles et j'accepte la politique de confidentialité"
+			},
+			"error": {
+				"incorrectEmail": "Veuillez entrer une adresse email valide.",
+				"required": "Ce champ est obligatoire.",
+				"validPostalCode": "Entrez un code postal valide",
+				"missingFields": "Veuillez remplir tous les champs obligatoires.",
+				"lengthError": "Veuillez écrire un nom d'au moins 3 lettres",
+				"invalidOption": "Veuillez saisir un état valide",
+				"idDocument": "Entrez un numéro d'identification valide",
+				"visaType": "Entrez un type de visa valide"
+			}
+		},
+		"step1": {
+			"title": "Informations Personnelles",
+			"description": "Entrez vos informations personnelles pour commencer.",
+			"confirmButton": "Confirmez vos informations"
+		},
+		"step2": {
+			"title": "Détails de l'Adresse",
+			"description": "Fournissez vos détails de localisation pour continuer.",
+			"confirmButton": "Étape suivante"
+		},
+		"finalStep": {
+			"title": "Presque terminé !",
+			"description": "Vérifiez vos informations avant d'envoyer.",
+			"submitButton": "Envoyer"
+		},
+		"success": {
+			"title": "Inscription réussie !",
+			"subtitle": "Merci de vous être inscrit ! Nous vous contacterons bientôt.",
+			"button": "Redémarrer le formulaire"
+		},
+		"fail": {
+			"title": "Oups, quelque chose s'est mal passé...",
+			"subtitle": "Veuillez réessayer",
+			"button": "Redémarrer le formulaire"
+		}
+	},
+	"footer": {
+		"country": "Pays :",
+		"language": "Langue :"
+	}
+}

@@ -1,0 +1,90 @@
+{
+	"homePage": {
+		"title": "Subscribe to the Waiting List!",
+		"subtitle": "Do you wanna join us? Fill the form and we will contact you!",
+		"country": "Select your country",
+		"language": "Select your language",
+		"bottomText": "Everything Right?",
+		"signUpButton": "Sign Up now!"
+	},
+	"countries": {
+		"label": {
+			"ca": "Canada",
+			"us": "United States",
+			"br": "Brazil",
+			"in": "India",
+			"ae": "United Arab Emirates",
+			"fr": "France"
+		}
+	},
+	"languages": {
+		"label": {
+			"fr": "French",
+			"pt": "Portuguese",
+			"en": "English"
+		}
+	},
+	"signUp": {
+		"title": "Sign Up Form",
+		"description": "Please provide the required information to proceed.",
+		"personalIdentification": "Social Security Number",
+		"location": "State",
+		"postCode": "ZIP Code",
+		"confirmButton": "Confirm your information",
+		"form": {
+			"label": {
+				"email": "Email Address",
+				"name": "Name",
+				"country": "Country",
+				"state": "State",
+				"city": "City",
+				"location": "State",
+				"postalCode": "Postal Code",
+				"continueButton": "Continue",
+				"idDocument": "Social Security Number",
+				"confirmData": "I confirm my data is correct",
+				"visaType": "Visa Type",
+				"privacyPolicy": "I agree with sharing my personal data and agree with Privacy Policy"
+			},
+			"error": {
+				"incorrectEmail": "Please enter a valid email address.",
+				"required": "This field is required.",
+				"validPostalCode": "Enter a valid Zip Code",
+				"lengthError": "Please write a name with at least 3 letters",
+				"missingFields": "Please fill out all required fields.",
+				"invalidOption": "Please write a valid state",
+				"idDocument": "Enter a valid Social Security Number",
+				"visaType": "Select a valid Visa Type"
+			}
+		},
+		"step1": {
+			"title": "Personal Information",
+			"description": "Enter your personal details to begin the process.",
+			"confirmButton": "Confirm your information"
+		},
+		"step2": {
+			"title": "Address Details",
+			"description": "Provide your location details to proceed.",
+			"confirmButton": "Next Step"
+		},
+		"finalStep": {
+			"title": "Almost there!",
+			"description": "Review your details before submitting.",
+			"submitButton": "Submit"
+		},
+		"success": {
+			"title": "Registration Complete!",
+			"subtitle": "Thank you for signing up! We will contact you soon.",
+			"button": "Restart form"
+		},
+		"fail": {
+			"title": "Ooops, something went wrong...",
+			"subtitle": "Please try again",
+			"button": "Restart form"
+		}
+	},
+	"footer": {
+		"country": "Country:",
+		"language": "Language:"
+	}
+}

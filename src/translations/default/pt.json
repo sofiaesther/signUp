@@ -1,0 +1,90 @@
+{
+	"homePage": {
+		"title": "Inscreva-se na Lista de Espera!",
+		"subtitle": "Quer se juntar a nós? Preencha o formulário e entraremos em contato!",
+		"country": "Selecione seu país",
+		"language": "Selecione seu idioma",
+		"bottomText": "Tudo certo?",
+		"signUpButton": "Inscreva-se agora!"
+	},
+	"countries": {
+		"label": {
+			"ca": "Canadá",
+			"us": "Estados Unidos",
+			"br": "Brasil",
+			"in": "Índia",
+			"ae": "Emirados Árabes Unidos",
+			"fr": "França"
+		}
+	},
+	"languages": {
+		"label": {
+			"fr": "Francês",
+			"pt": "Português",
+			"en": "Inglês"
+		}
+	},
+	"signUp": {
+		"title": "Formulário de Inscrição",
+		"description": "Forneça as informações necessárias para continuar.",
+		"personalIdentification": "Número de Identificação",
+		"location": "Estado",
+		"postCode": "CEP",
+		"confirmButton": "Confirmar suas informações",
+		"form": {
+			"label": {
+				"email": "Endereço de Email",
+				"name": "Nome",
+				"country": "País",
+				"state": "Estado",
+				"city": "Cidade",
+				"location": "Estado",
+				"postalCode": "Código Postal",
+				"continueButton": "Continuar",
+				"idDocument": "CPF",
+				"visaType": "Tipo de visto",
+				"confirmData": "Confirmo que meus dados estão corretos",
+				"privacyPolicy": "Concordo em compartilhar meus dados pessoais e aceito a Política de Privacidade"
+			},
+			"error": {
+				"incorrectEmail": "Por favor, insira um endereço de email válido.",
+				"required": "Este campo é obrigatório.",
+				"validPostalCode": "Insira um código postal válido",
+				"missingFields": "Por favor, preencha todos os campos obrigatórios.",
+				"lengthError": "Por favor, escreva um nome com pelo menos 3 letras",
+				"invalidOption": "Adicione um estado válido",
+				"idDocument": "Digite um CPF válido",
+				"visaType": "Digite um tipo de visto válido"
+			}
+		},
+		"step1": {
+			"title": "Informações Pessoais",
+			"description": "Digite seus dados pessoais para iniciar o processo.",
+			"confirmButton": "Confirmar suas informações"
+		},
+		"step2": {
+			"title": "Detalhes do Endereço",
+			"description": "Forneça seus dados de localização para continuar.",
+			"confirmButton": "Próximo Passo"
+		},
+		"finalStep": {
+			"title": "Quase lá!",
+			"description": "Revise seus dados antes de enviar.",
+			"submitButton": "Enviar"
+		},
+		"success": {
+			"title": "Cadastro Completo!",
+			"subtitle": "Obrigado por se inscrever! Entraremos em contato em breve.",
+			"button": "Reiniciar formulário"
+		},
+		"fail": {
+			"title": "Opa, algo deu errado...",
+			"subtitle": "Por favor, tente novamente",
+			"button": "Reiniciar formulário"
+		}
+	},
+	"footer": {
+		"country": "País:",
+		"language": "Idioma:"
+	}
+}

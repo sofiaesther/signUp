@@ -1,0 +1,23 @@
+{
+	"homePage": {
+		"title": "Subscribe now!!!"
+	},
+	"signUp": {
+		"form": {
+			"label": {
+				"location": "Province",
+				"idDocument": "Social Insurance Number (SIN)",
+				"postalCode": "Postal Code",
+				"confirmData": "I confirm my details are correct"
+			},
+			"error": {
+				"validPostalCode": "Enter a valid Postal Code",
+				"invalidOption": "Please write a valid province",
+				"idDocument": "Enter a valid SIN"
+			}
+		},
+		"step1": {
+			"description": "Please provide your information as shown on your Canadian ID."
+		}
+	}
+}

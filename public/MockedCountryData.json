@@ -1,0 +1,194 @@
+{
+	"countries": [
+		{
+			"languageCode": ["en"],
+			"countryCode": "us",
+			"countryName": "United States",
+			"formFields": [
+				{
+					"id": "idDocument",
+					"label": "Social Security Number",
+					"validation": {
+						"pattern": "^(?!000|666|9\\d{2})\\d{3}-(?!00)\\d{2}-(?!0000)\\d{4}$",
+						"message": "(XXX-XX-XXXX)"
+					}
+				},
+				{
+					"id": "location",
+					"label": "State",
+					"validation": {
+						"type": "state"
+					}
+				},
+				{
+					"id": "postalCode",
+					"label": "Zip Code",
+					"validation": {
+						"pattern": "^\\d{5}(?:-\\d{4})?$",
+						"message":"(5 or 9 digits)"
+					}
+				}
+			]
+		},
+		{
+			"languageCode": ["en"],
+			"countryCode": "ae",
+			"countryName": "United Arab Emirates",
+			"formFields": [
+				{
+					"id": "idDocument",
+					"label": "Emirates ID",
+					"validation": {
+						"pattern": "^784-\\d{4}-\\d{7}-\\d{1}$",
+						"message": "(784-XXXX-XXXXXXX-X)"
+					}
+				},
+				{
+					"id": "visaType",
+					"label": "Visa Type",
+					"validation": {
+						"options": [
+							"Tourist",
+							"Student",
+							"Work",
+							"Business",
+							"Transit",
+							"Diplomatic"
+						],
+						"message": {
+							"id": "Enter a valid Visa Type",
+							"format": "(Tourist, Student, Work, Business, Transit, Diplomatic)"
+						}
+					}
+				},
+				{
+					"id": "location",
+					"label": "City",
+					"validation": {
+						"type": "city"
+					}
+				}
+			]
+		},
+		{
+			"languageCode": ["en"],
+			"countryCode": "in",
+			"countryName": "India",
+			"formFields": [
+				{
+					"id": "idDocument",
+					"label": "Aadhaar Number",
+					"validation": {
+						"pattern": "^\\d{4}\\s\\d{4}\\s\\d{4}$",
+						"message":  "(XXXX XXXX XXXX)"
+					}
+				},
+				{
+					"id": "location",
+					"label": "State",
+					"validation": {
+						"type": "state"
+					}
+				},
+				{
+					"id": "postalCode",
+					"label": "PIN Code",
+					"validation": {
+						"pattern": "^\\d{6}$",
+						"message": "XXXXXX"
+					}
+				}
+			]
+		},
+		{
+			"languageCode": ["fr"],
+			"countryCode": "fr",
+			"countryName": "France",
+			"formFields": [
+				{
+					"id": "idDocument",
+					"label": "Tax ID",
+					"validation": {
+						"pattern": "^\\d{11}$",
+						"message": "xxxxxxxxxxx"
+					}
+				},
+				{
+					"id": "location",
+					"label": "Region",
+					"validation": {
+						"type": "state"
+					}
+				},
+				{
+					"id": "postalCode",
+					"label": "Postal Code",
+					"validation": {
+						"pattern": "^\\d{5}$",
+						"message": "xxxxx"
+					}
+				}
+			]
+		},
+		{
+			"languageCode": ["en", "fr"],
+			"countryCode": "ca",
+			"countryName": "Canada",
+			"formFields": [
+				{
+					"id": "idDocument",
+					"label": "SIN",
+					"validation": {
+						"pattern": "^\\d{3}-\\d{3}-\\d{3}$",
+						"message": "(XXX-XXX-XXX)"
+					}
+				},
+				{
+					"id": "location",
+					"label": "Province",
+					"validation": {
+						"type": "state"
+					}
+				},
+				{
+					"id": "postalCode",
+					"label": "Postal Code",
+					"validation": {
+						"pattern": "^[A-Za-z]\\d[A-Za-z] ?\\d[A-Za-z]\\d$",
+						"message": "(A1A 1A1)"
+					}
+				}
+			]
+		},
+		{
+			"languageCode": ["pt"],
+			"countryCode": "br",
+			"countryName": "Brazil",
+			"formFields": [
+				{
+					"id": "idDocument",
+					"label": "CPF",
+					"validation": {
+						"pattern": "^\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}$",
+						"message": "(XXX.XXX.XXX-XX)"
+					}
+				},
+				{
+					"id": "location",
+					"label": "State",
+					"validation": {
+						"type": "state"
+					}
+				},
+				{
+					"id": "postalCode",
+					"label": "CEP",
+					"validation": {
+						"pattern": "^\\d{5}-\\d{3}$",
+						"message": "(XXXXX-XXX)"
+					}
+				}
+			]
+		}
+	]
+}

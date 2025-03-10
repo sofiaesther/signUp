@@ -1,0 +1,20 @@
+{
+	"signUp": {
+		"form": {
+			"label": {
+				"location": "State",
+				"idDocument": "Aadhaar Number",
+				"postalCode": "PIN Code",
+				"confirmData": "I confirm my details are correct"
+			},
+			"error": {
+				"validPostalCode": "Enter a valid PIN Code",
+				"invalidOption": "Please write a valid state",
+				"idDocument": "Enter a valid Aadhaar Number"
+			}
+		},
+		"step1": {
+			"description": "Enter your details as per your Aadhaar Card."
+		}
+	}
+}

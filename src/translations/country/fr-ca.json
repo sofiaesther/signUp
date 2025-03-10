@@ -1,0 +1,23 @@
+{
+	"homePage": {
+		"title": "Abonnez-vous maintenant !!!"
+	},
+	"signUp": {
+		"form": {
+			"label": {
+				"location": "Province",
+				"idDocument": "Numéro d'Assurance Sociale (NAS)",
+				"postalCode": "Code Postal",
+				"confirmData": "Je confirme que mes informations correspondent à ma pièce d'identité officielle"
+			},
+			"error": {
+				"validPostalCode": "Entrez un code postal valide",
+				"invalidOption": "Veuillez écrire une province valide",
+				"idDocument": "Entrez un NAS valide"
+			}
+		},
+		"step1": {
+			"description": "Veuillez fournir vos informations telles qu'elles figurent sur votre pièce d'identité canadienne."
+		}
+	}
+}

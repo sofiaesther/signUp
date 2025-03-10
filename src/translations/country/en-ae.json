@@ -1,0 +1,20 @@
+{
+	"signUp": {
+		"form": {
+			"label": {
+				"location": "City",
+				"idDocument": "Emirates ID",
+				"postalCode": "PO Box Number",
+				"confirmData": "I confirm my details match"
+			},
+			"error": {
+				"validPostalCode": "Enter a valid PO Box Number",
+				"invalidOption": "Please write a valid city",
+				"idDocument": "Enter a valid Emirates ID"
+			}
+		},
+		"step1": {
+			"description": "Provide your personal details as per your Emirates ID."
+		}
+	}
+}
